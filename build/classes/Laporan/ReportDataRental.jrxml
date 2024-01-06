@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3aab9b18-470c-453c-b9bc-1fc125fa6988">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     tbl_penyewa.`Nik` AS tbl_penyewa_Nik,
+     tbl_penyewa.`Nama` AS tbl_penyewa_Nama,
+     tbl_penyewa.`Alamat` AS tbl_penyewa_Alamat,
+     tbl_penyewa.`NoTelp` AS tbl_penyewa_NoTelp,
+     tbl_rentalmobil.`no_transaksi` AS tbl_rentalmobil_no_transaksi,
+     tbl_rentalmobil.`tanggal` AS tbl_rentalmobil_tanggal,
+     tbl_rentalmobil.`Nama_Mobil` AS tbl_rentalmobil_Nama_Mobil,
+     tbl_rentalmobil.`jasa_supir` AS tbl_rentalmobil_jasa_supir,
+     tbl_rentalmobil.`biaya_supir` AS tbl_rentalmobil_biaya_supir,
+     tbl_rentalmobil.`harga_sewa` AS tbl_rentalmobil_harga_sewa,
+     tbl_rentalmobil.`total` AS tbl_rentalmobil_total,
+     tbl_rentalmobil.`no_polisi` AS tbl_rentalmobil_no_polisi
+FROM
+     `tbl_penyewa` tbl_penyewa,
+     `tbl_rentalmobil` tbl_rentalmobil]]>
+	</queryString>
+	<field name="tbl_penyewa_Nik" class="java.lang.String"/>
+	<field name="tbl_penyewa_Nama" class="java.lang.String"/>
+	<field name="tbl_penyewa_Alamat" class="java.lang.String"/>
+	<field name="tbl_penyewa_NoTelp" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_no_transaksi" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_tanggal" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_Nama_Mobil" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_jasa_supir" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_biaya_supir" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_harga_sewa" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_total" class="java.lang.String"/>
+	<field name="tbl_rentalmobil_no_polisi" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="16" y="41" width="50" height="20" uuid="67cc7c81-eb04-4c4b-9291-0c6ba4482926"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="41" width="77" height="20" uuid="9d402a25-39b7-4904-a5ed-47878334a268"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="41" width="66" height="20" uuid="cee8772d-05f4-48b9-8882-456a2b3a6851"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="41" width="66" height="20" uuid="afdb2a15-8b39-492f-b7b4-c1f0a9eae021"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="41" width="66" height="20" uuid="0f773600-c5ac-4afe-8976-7203c4b2a1f6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="41" width="66" height="20" uuid="5e8a4ff0-264c-4018-bfe3-a5467d27275f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="41" width="66" height="20" uuid="dee65350-05bd-46c4-a47a-9a5ea64bc165"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="41" width="66" height="20" uuid="149e8782-d14f-4b04-af3e-cb1a1586d075"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jasa Supir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="41" width="66" height="20" uuid="f205f5ef-e73c-404d-bed5-5225c086ab40"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Biaya Supir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="670" y="41" width="66" height="20" uuid="0d14089d-1a90-4b08-9388-2ad436f6e9c8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Harga Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="736" y="41" width="66" height="20" uuid="0de1b476-4e32-4c31-b253-08faffd55af1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="539" y="41" width="65" height="20" uuid="ba05b4d6-c451-4006-96ad-b147b1f457c4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Polisi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="16" height="20" uuid="e6c4cd05-9158-4775-a294-ff6dc1b9fb43"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="16" height="20" uuid="847db31a-824e-47c9-ba23-4b9f4e7fa103"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="0" width="50" height="20" uuid="a745ed0c-ac8b-46d2-abcc-844160fc3d34"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_Nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="0" width="77" height="20" uuid="e9bd57ca-3d10-49ea-a4f0-58c936b0055c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="0" width="66" height="20" uuid="62a46a7f-2dec-48ee-8298-81080dda6222"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="0" width="66" height="20" uuid="f0166e5d-f286-461d-83b0-3eecd6bc25c6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_NoTelp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="66" height="20" uuid="0fb98f30-7d67-4141-b689-905feca86df4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_no_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="0" width="66" height="20" uuid="5067b234-20d4-4f14-9321-07064125aaf3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="0" width="66" height="20" uuid="8980fa29-4a95-4475-87c9-1e88a1e8e5ab"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_Nama_Mobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="473" y="0" width="66" height="20" uuid="6fd128bf-3956-4ae7-b020-7c188acc0616"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_jasa_supir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="604" y="0" width="66" height="20" uuid="2f342eee-8eea-477e-ad87-c6c16982c31e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_biaya_supir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="0" width="66" height="20" uuid="c5cd2b7b-baad-4f70-a18f-ba12fb9eb92d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_harga_sewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="736" y="0" width="66" height="20" uuid="bc299df7-f41e-4f29-ad22-aec3bbcae696"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="539" y="0" width="65" height="20" uuid="84b5259d-c09a-40be-b31e-e1f852da82f7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_rentalmobil_no_polisi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

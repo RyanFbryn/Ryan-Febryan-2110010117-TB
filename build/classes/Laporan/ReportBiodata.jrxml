@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65d39f43-ccb2-4cd2-b506-d91506ff0f4c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tbl_penyewa.`Nik` AS tbl_penyewa_Nik,
+     tbl_penyewa.`Nama` AS tbl_penyewa_Nama,
+     tbl_penyewa.`Alamat` AS tbl_penyewa_Alamat,
+     tbl_penyewa.`TanggalLahir` AS tbl_penyewa_TanggalLahir,
+     tbl_penyewa.`JenisKelamin` AS tbl_penyewa_JenisKelamin,
+     tbl_penyewa.`Agama` AS tbl_penyewa_Agama,
+     tbl_penyewa.`NoTelp` AS tbl_penyewa_NoTelp
+FROM
+     `tbl_penyewa` tbl_penyewa]]>
+	</queryString>
+	<field name="tbl_penyewa_Nik" class="java.lang.String"/>
+	<field name="tbl_penyewa_Nama" class="java.lang.String"/>
+	<field name="tbl_penyewa_Alamat" class="java.lang.String"/>
+	<field name="tbl_penyewa_TanggalLahir" class="java.lang.String"/>
+	<field name="tbl_penyewa_JenisKelamin" class="java.lang.String"/>
+	<field name="tbl_penyewa_Agama" class="java.lang.String"/>
+	<field name="tbl_penyewa_NoTelp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="149" y="22" width="266" height="20" uuid="586e0c1c-8bae-40b3-b274-97bb52b3e82b"/>
+				<textElement>
+					<font fontName="Algerian" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Biodata Rental Mobil]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="14" width="161" height="20" uuid="a1cfa826-351f-4b18-a72e-55ae172b416c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama : Ryan Febryan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="17" y="41" width="92" height="20" uuid="5f51a8b1-f18a-4b81-a420-9826884e6635"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="41" width="92" height="20" uuid="50cb0cd9-2b5a-432e-b5e1-323a0691204e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="41" width="92" height="20" uuid="1615b367-5155-4181-ab25-e9543cde0faa"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="41" width="92" height="20" uuid="39b6bbb7-9d4b-49fd-a959-319ff3e333dc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="41" width="92" height="20" uuid="5973cb80-0ee4-4d08-9ddf-003a21fd4bbc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="41" width="92" height="20" uuid="585aa5c9-0032-4ca1-b536-f88d3dc9f271"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-12" y="41" width="29" height="20" uuid="bc8d599a-9032-4dd4-9a58-36179d09f3ae"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="0" width="161" height="20" uuid="36a6fe16-2f42-4da2-a71e-e07c4d8c6757"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NPM   : 2110010117]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="-12" y="0" width="29" height="20" uuid="ae8a0356-1f3b-442f-a101-e626afabd964"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="0" width="92" height="20" uuid="72b071b6-50fb-4063-a0b1-74bf9b00533a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_Nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="109" y="0" width="92" height="20" uuid="f18e3a6f-bf69-49ec-8461-9c45c01515dd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="0" width="92" height="20" uuid="eeda50b8-26a8-4fa1-854a-06d9f76aef61"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="0" width="92" height="20" uuid="2a99e3dc-1b96-4481-990e-0aee22730cf4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_TanggalLahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="92" height="20" uuid="f98fa291-41f4-46b4-b95e-c79a4e41e395"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_JenisKelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="0" width="92" height="20" uuid="e7afddfd-125a-4a35-a458-b00d495a3219"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tbl_penyewa_NoTelp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
